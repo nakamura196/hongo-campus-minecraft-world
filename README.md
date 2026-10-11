@@ -31,6 +31,21 @@ Rendered with BlueMap, a 3D web map of the world.
 Unzip into the `saves` folder, open "hongo-campus" in Singleplayer, and accept the bundled resource pack
 (it draws the grass slopes; without it they look like blue-green planks).
 
+## 作り方 / How it was made
+
+1. 点群を 1 m の格子に分け、各マスを「地面・建物・木・水・その他」に分類します。
+   PLATEAU の建物の輪郭の内側を建物、緑色の点やレーザーが突き抜けた点を木としています
+2. 建物は輪郭に沿って屋根の高さまで積み、屋根は平面に当てはめて凸凹を均します。
+   ブロックの色は、点群に付いた航空写真の色から近いものを 1 棟 1 色で選びます
+3. 木は樹冠を 1 本ずつに分け、幹と葉にします。三四郎池は、点が返ってこない所を水にしています
+4. 地面と屋根の傾きは、ハーフブロックと階段で表します
+
+The point cloud is split into a 1 m grid and each cell is classified as ground, building, tree, water or other
+(inside a PLATEAU footprint = building; green points or points the laser passed through = tree).
+Buildings are filled to roof height along their footprints, with roofs fitted to planes; each building gets one block
+chosen from the aerial-photo colours of its points. Tree crowns are split into individual trees with trunks.
+Sanshiro Pond is where the laser returned nothing. Slopes on the ground and roofs use slabs and stairs.
+
 ## 出典 / Sources
 
 - 東京都デジタルツイン実現プロジェクト 区部点群データ（東京都デジタルサービス局）、
