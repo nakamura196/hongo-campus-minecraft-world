@@ -6,6 +6,13 @@
 The Hongo campus of the University of Tokyo and the streets around it, as a Minecraft Java Edition world.
 Generated automatically from aerial laser scanning and PLATEAU building data, with no hand-placed parts. 1 block = 1 m.
 
+![安田講堂の前から / Yasuda Auditorium and its square](images/yasuda.jpg)
+
+![全体を真上から（上が北） / The whole area from above (north up)](images/overview.jpg)
+
+画像は [BlueMap](https://bluemap.bluecolored.de/)（ワールドをブラウザで見る 3D 地図）で描いたものです。
+Rendered with BlueMap, a 3D web map of the world.
+
 ## ダウンロード / Download
 
 [Releases](https://github.com/nakamura196/hongo-campus-minecraft-world/releases/latest) から `hongo-campus.zip` を取得してください。
