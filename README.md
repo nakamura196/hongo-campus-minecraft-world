@@ -1,9 +1,9 @@
 # 本郷キャンパス Minecraft ワールド / Hongo Campus in Minecraft
 
-東京大学 本郷地区（本郷・弥生・浅野）と周辺の通りを、Minecraft Java 版のワールドにしたものです。
+東京大学 本郷地区（本郷・弥生・浅野）と周辺の通りを、Minecraft のワールドにしたものです。Java 版と統合版（Bedrock 版）があります。
 航空レーザ測量の点群と PLATEAU の建物データから、手を加えずに自動で作っています。1 ブロック = 1 m です。
 
-The Hongo campus of the University of Tokyo and the streets around it, as a Minecraft Java Edition world.
+The Hongo campus of the University of Tokyo and the streets around it, as a Minecraft world, for Java Edition and Bedrock Edition.
 Generated automatically from aerial laser scanning and PLATEAU building data, with no hand-placed parts. 1 block = 1 m.
 
 ![安田講堂の前から / Yasuda Auditorium and its square](images/yasuda.jpg)
@@ -15,13 +15,16 @@ Rendered with BlueMap, a 3D web map of the world.
 
 ## ダウンロード / Download
 
-[Releases](https://github.com/nakamura196/hongo-campus-minecraft-world/releases/latest) から `hongo-campus.zip` を取得してください。
+[Releases](https://github.com/nakamura196/hongo-campus-minecraft-world/releases/latest) から取得してください。
 
-- 対応: Minecraft Java 版 26.3 / Java Edition 26.3
+- Java 版 26.3 以降: `hongo-campus.zip` / Java Edition 26.3 or later
+- 統合版（iPhone・iPad・Android・Windows など）1.21.130 以降: `hongo-campus.mcworld` / Bedrock Edition 1.21.130 or later
 - 範囲: 約 1.1 × 1.65 km（ワールドの x 3072..4171, z 0..1649）
 - 出発地点: 安田講堂前 / Spawn: in front of Yasuda Auditorium
 
 ## 開き方 / How to open
+
+### Java 版 / Java Edition
 
 1. zip を Minecraft の `saves` フォルダに展開します
    （Windows: `%APPDATA%\.minecraft\saves`、Mac: `~/Library/Application Support/minecraft/saves`）
@@ -30,6 +33,20 @@ Rendered with BlueMap, a 3D web map of the world.
 
 Unzip into the `saves` folder, open "hongo-campus" in Singleplayer, and accept the bundled resource pack
 (it draws the grass slopes; without it they look like blue-green planks).
+
+### 統合版 / Bedrock Edition
+
+`hongo-campus.mcworld` を開くと、Minecraft にワールドが取り込まれます。
+iPhone・iPad では、AirDrop で受け取るか、ファイルアプリでファイルを開き、Minecraft を選びます。
+Windows では、ファイルをダブルクリックします。取り込んだあと「プレイ」のワールド一覧から「hongo-campus」を開きます。
+リソースパックやビヘイビアパックは使っていません。
+
+統合版のワールドは、Java 版のワールドを [Chunker](https://github.com/HiveGamesOSS/Chunker)（Hive Games、MIT）で変換したものです。
+草の坂のリソースパックは Java 版用のため、統合版では坂の草が普通の草ブロックになります。
+
+Open `hongo-campus.mcworld` and Minecraft imports it (on iPhone/iPad, via AirDrop or the Files app; on Windows, double-click).
+It is the Java world converted with [Chunker](https://github.com/HiveGamesOSS/Chunker) (Hive Games, MIT).
+No resource or behavior packs are used; the grass slopes appear as plain grass blocks.
 
 ## 作り方 / How it was made
 
@@ -55,7 +72,7 @@ Sanshiro Pond is where the laser returned nothing. Slopes on the ground and roof
 
 ## ライセンス / License
 
-ワールド（`hongo-campus.zip` の中身）は [CC BY 4.0](LICENSE) です。表示の例:
+ワールド（`hongo-campus.zip` と `hongo-campus.mcworld` の中身）は [CC BY 4.0](LICENSE) です。表示の例:
 「本郷キャンパス Minecraft ワールド（中村 覚、CC BY 4.0）。東京都 区部点群データ（CC BY 4.0）・国土交通省 PLATEAU を加工して作成」
 
 The world is licensed under [CC BY 4.0](LICENSE). Credit both this work and the sources above.
